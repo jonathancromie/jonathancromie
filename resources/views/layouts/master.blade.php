@@ -31,8 +31,9 @@
 			<nav id="nav">
 				<ul>
 					<li><a href="{{ asset('index') }}">Home</a></li>
+					<li><a href="{{ asset('about') }}">About Me</a></li>
 					<li><a href="{{ asset('portfolio') }}">Portfolio</a></li>
-					<li><a href="{{ asset('blog') }}">Blog</a></li>
+					<!-- <li><a href="{{ asset('blog') }}">Blog</a></li> -->
 					<li><a href="{{ asset('resume') }}">Resume</a></li>
 					<li><a href="{{ asset('contact') }}">Contact</a></li>
 				</ul>

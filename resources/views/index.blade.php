@@ -17,7 +17,7 @@
 	</section>
 
 	<!-- One -->
-	<section id="one" class="wrapper style1 align-center">
+	<!-- <section id="one" class="wrapper style1 align-center">
 		<div class="container">
 			<header>
 				<h2>Consectetur adipisicing elit</h2>
@@ -38,7 +38,7 @@
 				</section>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- Two -->
 	<section id="two" class="wrapper style2 align-center">
