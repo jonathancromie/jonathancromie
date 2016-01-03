@@ -78,3 +78,4 @@
 			</footer>
 		</div>
 	</section>
+@endsection
