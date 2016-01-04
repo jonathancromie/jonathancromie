@@ -23,22 +23,8 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
-	<body class="landing">
-
-		<!-- Header -->
-		<header id="header">
-			<h1><a href="index">Jonathan Cromie</a></h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="{{ asset('index') }}">Home</a></li>
-					<li><a href="{{ asset('about') }}">About Me</a></li>
-					<li><a href="{{ asset('portfolio') }}">Portfolio</a></li>
-					<!-- <li><a href="{{ asset('blog') }}">Blog</a></li> -->
-					<li><a href="{{ asset('resume') }}">Resume</a></li>
-					<li><a href="{{ asset('contact') }}">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
+	@section('header')
+	@show
 
 		@yield('content')
 
@@ -47,53 +33,43 @@
 			<div class="container">
 				<div class="row">
 					<section class="4u 6u(medium) 12u$(small)">
-						<h3>Lorem ipsum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, cumque!</p>
-						<ul class="alt">
-							<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-							<li><a href="#">Quod adipisci perferendis et itaque.</a></li>
-							<li><a href="#">Itaque eveniet ullam, veritatis reiciendis?</a></li>
-							<li><a href="#">Accusantium repellat accusamus a, soluta.</a></li>
-						</ul>
+						<h3>Testimonial</h3>
+						<p>
+							I found Jonathan's coding ability to be above what I would normally expect from a university graduate 
+							and he displayed to me his ability to resolve issues by utilising all available resources. 
+							In the instances where there was a problem he was unable to solve, he was able to bring up all relevant
+							work on his screen and was very attentive while I walked him through the steps to fixing the issue and 
+							asked very relevant and intelligent questions when he didn’t understand something.
+						</p>
 					</section>
 					<section class="4u 6u$(medium) 12u$(small)">
-						<h3>Nostrum, repellat!</h3>
-						<p>Tenetur voluptate exercitationem eius tempora! Obcaecati suscipit, soluta earum blanditiis.</p>
-						<ul class="alt">
-							<li><a href="#">Lorem ipsum dolor sit amet.</a></li>
-							<li><a href="#">Id inventore, qui necessitatibus sunt.</a></li>
-							<li><a href="#">Deleniti eum odit nostrum eveniet.</a></li>
-							<li><a href="#">Illum consectetur quibusdam eos corporis.</a></li>
-						</ul>
+						<h3>Favourite Quote</h3>
+						<p><i>"We can only see a short distance ahead, but we can see plenty there that needs to be done."</i> - Alan Turing</p>
+
 					</section>
 					<section class="4u$ 12u$(medium) 12u$(small)">
-						<h3>Contact Us</h3>
+						<h3>Contact Me</h3>
 						<ul class="icons">
-							<li><a href="#" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon rounded fa-pinterest"><span class="label">Pinterest</span></a></li>
-							<li><a href="#" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
-							<li><a href="#" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a target="_blank" href="https://twitter.com/joncromie" class="icon rounded fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="https://www.facebook.com/JonathanCromie" class="icon rounded fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a target="_blank" href="https://plus.google.com/u/0/+JonathanCromie" class="icon rounded fa-google-plus"><span class="label">Google+</span></a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAAA2lZ2MBgPNRAIUIsQWpyGwQI3NJML3dPYE&trk=nav_responsive_tab_profile" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a target="_blank" href="https://github.com/jonathancromie" class="icon rounded fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 						<ul class="tabular">
 							<li>
-								<h3>Address</h3>
-								1234 Somewhere Road<br>
-								Nashville, TN 00000
-							</li>
-							<li>
-								<h3>Mail</h3>
-								<a href="#">someone@untitled.tld</a>
+								<h3>Email</h3>
+								<a href="#">joncromie@gmail.com</a>
 							</li>
 							<li>
 								<h3>Phone</h3>
-								(000) 000-0000
+								0447 193 506
 							</li>
 						</ul>
 					</section>
 				</div>
 				<ul class="copyright">
-					<li>&copy; Untitled. All rights reserved.</li>
+					<li>&copy; Jonathan Cromie. All rights reserved.</li>
 					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
 					<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 				</ul>
