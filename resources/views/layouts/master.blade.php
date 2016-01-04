@@ -59,7 +59,7 @@
 						<ul class="tabular">
 							<li>
 								<h3>Email</h3>
-								<a href="#">joncromie@gmail.com</a>
+								<a href="mailto:joncromie@gmail.com?subject=Job Application">joncromie@gmail.com</a>
 							</li>
 							<li>
 								<h3>Phone</h3>

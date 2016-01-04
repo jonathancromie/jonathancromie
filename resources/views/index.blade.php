@@ -10,7 +10,7 @@
 
 		<!-- Header -->
 		<header id="header">
-			<h1><a href="">Jonathan Cromie</a></h1>
+			<h1><a href="#">Jonathan Cromie</a></h1>
 			<nav id="nav">
 				<ul>
 					<li><a href="#">Home</a></li>
