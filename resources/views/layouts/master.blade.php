@@ -12,6 +12,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
@@ -56,16 +57,38 @@
 							<li><a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAAA2lZ2MBgPNRAIUIsQWpyGwQI3NJML3dPYE&trk=nav_responsive_tab_profile" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							<li><a target="_blank" href="https://github.com/jonathancromie" class="icon rounded fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
-						<ul class="tabular">
-							<li>
-								<h3>Email</h3>
-								<a href="mailto:joncromie@gmail.com?subject=Job Application">joncromie@gmail.com</a>
-							</li>
-							<li>
-								<h3>Phone</h3>
-								0447 193 506
-							</li>
-						</ul>
+						@if ($errors->any)
+							<div class="alert alert-danger">
+								<ul>
+									@foreach ($errors as $error)
+										<li>{{ $error }}</li>
+									@endforeach
+								</ul>
+							</div>
+						@endif
+						@if (Session::has('success'))
+							<div class="alert alert-success">
+								<p>{{ Session::get('success') }}</p>
+							</div>			
+						@endif
+						<form method="post" action="/contact">
+							{{ csrf_field() }}
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" id="name" name="name" required />
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" required />
+							</div>
+							<div class="form-group">
+								<label for="content">Message</label>
+								<textarea id="content" name="content" rows="5" required></textarea>
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Submit" class="btn btn-default" />
+							</div>
+						</form>
 					</section>
 				</div>
 				<ul class="copyright">

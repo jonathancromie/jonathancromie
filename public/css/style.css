@@ -1100,3 +1100,15 @@
 					margin-left: 0;
 					padding-left: 0;
 				}
+
+.alert {
+	
+}
+
+.alert.alert-success {
+	color: #155724;
+}
+
+.alert.alert-danger {
+	color: #721c24
+}
